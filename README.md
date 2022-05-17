@@ -17,11 +17,11 @@ This research was done at the [laboratoire lorrain de recherche en informatique 
 
 
 ## Instances Description
-An instance represents the charging demands during one day and have been generated as described [below](#instances-generation). All instances files are `.csv` files. Each row represents an electric vehicle. For each vehicle we have:
+An instance represents charging demands during one day and it was generated as described [below](#instances-generation). All instances files are `.csv` files. Each row represents an electric vehicle. For each vehicle we have:
 - Column `arrival_time` indicates the desired arrival time to the charging station in hours.
 -  Column `departure_time` gives the departure time in hours.
--  Column `initial_SOC` displays the initial state of charge (SoC) of the battery expressed as a percentage.
--  Column `desired_SOC` indicates the requested state of charge (SoC) by the driver, expressed as a percentage.
+-  Column `initial_SOC` displays the initial state-of-charge (SoC) of the battery expressed as a percentage.
+-  Column `desired_SOC` indicates the requested state-of-charge (SoC) by the driver, expressed as a percentage.
 - Column `battery_capacity` gives the battery capacity in (kWh) which is the maximum energy that can be stored in the battery.
 
 ## Instances generation
