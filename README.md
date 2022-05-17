@@ -1,7 +1,7 @@
 # EVCSP_RA_instances
 This repository contains the instances used for electric vehicle charging scheduling problem presented at paper "Electric Vehicle Charging Scheduling Problem: Heuristics and Metaheuristic approaches".
 
-This research was done at the [laboratoire lorrain de recherche en informatique et ses applications (LORIA)](https://www.loria.fr/en/) laboratory of the [Université de Lorraine](https://www.univ-lorraine.fr/), [OPTIMIST](https://optimist.loria.fr/) Team. and the [Institut de Recherche en Informatique, Mathématiques, Automatique et Signal (IRIMAS)](https://www.irimas.uha.fr/) laboratory of the [Université de Haute-Alsace (UHA)](https://www.uha.fr/).
+This research was done at the [laboratoire lorrain de recherche en informatique et ses applications (LORIA)](https://www.loria.fr/en/) laboratory of the [Université de Lorraine](https://www.univ-lorraine.fr/), [OPTIMIST](https://optimist.loria.fr/) Team. and the [Institut de Recherche en Informatique, Mathématiques, Automatique et Signal (IRIMAS)](https://www.irimas.uha.fr/) laboratory of the [Université de Haute-Alsace (UHA)](https://www.uha.fr/) by:
 
 | Name                | Email                      | Institute |
 |:--------------------|:---------------------------|:---------:|
@@ -25,7 +25,7 @@ An instance represents the charging demands during one day and have been generat
 - Column `battery_capacity` gives the battery capacity in (kWh) which is the maximum energy that can be stored in the battery.
 
 ## Instances generation
--Electric vehicle arrivals are randomly occurring and independent events. Therefore, the arrival time is modeled using a non-homogeneous Poisson Process with an arrival rate that varies at each hour h={1,...,24}. 
+Electric vehicle arrivals are randomly occurring and independent events. Therefore, the arrival time is modeled using a non-homogeneous Poisson Process with an arrival rate that varies at each hour h={1,...,24}. 
 - The parking duration follows an exponential distribution with a mean parking duration that also varies over time. The departure time of each electric vehicle can be directly obtained as the sum of the arrival time and the parking duration. 
 - The initial state-of-charge is considered uniformly distributed in the range of [0.2,0.7] of the capacity of the vehicle's battery. 
 - The desired state-of-charge of each electric vehicle is uniformly chosen from [the initial SoC,1]. 
@@ -33,11 +33,55 @@ An instance represents the charging demands during one day and have been generat
  
 
 ## Instanes with 10 vehicles
-This folder contains 15 instances generated with a number of vehicles limited to 10.
+`Instances_10_EVs ` folder contains 15 instances generated with a number of vehicles limited to 10.
 
 ## Instanes with vehicles
+`Instances` folder contains 45 instances.
 
-| File                | Number of vehicles           |
-|:--------------------|:---------------------------|
-
-
+| File                 |Number of vehicles|
+|:---------------------|:-----------------|
+|			scenario_1.csv 				|20																|
+|			scenario_2.csv 				|29																|
+|			scenario_3.csv 				|24																|
+|			scenario_4.csv 				|25																|
+|			scenario_5.csv 				|30																|
+|			scenario_6.csv 				|27																|
+|			scenario_7.csv 				|29																|
+|			scenario_8.csv 				|26																|
+|			scenario_9.csv 				|22																|
+|			scenario_10.csv 			|22																|
+|			scenario_11.csv 			|27																|
+|			scenario_12.csv 			|25																|
+|			scenario_13.csv 			|20																|
+|			scenario_14.csv 			|23																|
+|			scenario_15.csv 			|22																|
+|			scenario_16.csv 			|48																|
+|			scenario_17.csv 			|50																|
+|			scenario_18.csv 			|59																|
+|			scenario_19.csv 			|66																|
+|			scenario_20.csv 			|51																|
+|			scenario_21.csv 			|58																|
+|			scenario_22.csv 			|53																|
+|			scenario_23.csv 			|68																|
+|			scenario_24.csv 			|52																|
+|			scenario_25.csv 			|54																|
+|			scenario_26.csv 			|40																|
+|			scenario_27.csv 			|40																|
+|			scenario_28.csv 			|37																|
+|			scenario_29.csv 			|33																|
+|			scenario_30.csv 			|39																|
+|			scenario_31.csv 			|93																|
+|			scenario_32.csv 			|99																|
+|			scenario_33.csv 			|79																|
+|			scenario_34.csv 			|102															|
+|			scenario_35.csv 			|93																|
+|			scenario_36.csv 			|96																|
+|			scenario_37.csv 			|96																|
+|			scenario_38.csv 			|112															|
+|			scenario_39.csv 			|95																|
+|			scenario_40.csv 			|78																|
+|			scenario_41.csv 			|85																|
+|			scenario_42.csv 			|82																|
+|			scenario_43.csv 			|88																|
+|			scenario_44.csv 			|91																|
+|			scenario_45.csv 			|79																|
