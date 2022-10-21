@@ -35,7 +35,7 @@ Electric vehicle arrivals are randomly occurring and independent events. Therefo
 ## Instanes with 10 vehicles
 `Instances_10_EVs ` folder contains 15 instances generated with a number of vehicles limited to 10.
 
-## Instanes with vehicles
+## Instanes with more than 20 vehicles
 `Instances` folder contains 45 instances.
 
 | File                 |Number of vehicles|
