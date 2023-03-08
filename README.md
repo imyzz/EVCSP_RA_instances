@@ -20,7 +20,9 @@ This research was done at the [laboratoire lorrain de recherche en informatique 
 An instance represents charging demands and it was generated as described [below](#instances-generation). All instances files are `.csv` files. Each row represents an electric vehicle. For each vehicle we have:
 - Column `arrival_time` indicates the desired arrival time to the charging station in hours.
 -  Column `departure_time` gives the departure time in hours.
--  Column `required_energy` displays the requested energy in kWh.
+-  Column `initial_SOC` gives the initial state of charge in (%). 
+- Column `desired_SOC`gives the requested state of charge in (%). 
+- Column `battery_capacity` displays the battery capacity in kWh.
 
 
 ## Instances generation
