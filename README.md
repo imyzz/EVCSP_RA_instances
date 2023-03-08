@@ -1,5 +1,5 @@
 # EVCSP_RA_instances
-This repository contains the instances used for electric vehicle charging scheduling problem presented at paper "Electric Vehicle Charging Scheduling Problem: Heuristics and Metaheuristic approaches".
+This repository contains the instances used for electric vehicle charging scheduling problem presented at paper "Minimizing grid capacity in preemptive electric vehicle charging orchestration: complexity, exact and heuristic approaches".
 
 This research was done at the [laboratoire lorrain de recherche en informatique et ses applications (LORIA)](https://www.loria.fr/en/) laboratory of the [Université de Lorraine](https://www.univ-lorraine.fr/), [OPTIMIST](https://optimist.loria.fr/) Team. and the [Institut de Recherche en Informatique, Mathématiques, Automatique et Signal (IRIMAS)](https://www.irimas.uha.fr/) laboratory of the [Université de Haute-Alsace (UHA)](https://www.uha.fr/) by:
 
@@ -17,12 +17,11 @@ This research was done at the [laboratoire lorrain de recherche en informatique 
 
 
 ## Instances Description
-An instance represents charging demands during one day and it was generated as described [below](#instances-generation). All instances files are `.csv` files. Each row represents an electric vehicle. For each vehicle we have:
+An instance represents charging demands and it was generated as described [below](#instances-generation). All instances files are `.csv` files. Each row represents an electric vehicle. For each vehicle we have:
 - Column `arrival_time` indicates the desired arrival time to the charging station in hours.
 -  Column `departure_time` gives the departure time in hours.
--  Column `initial_SOC` displays the initial state-of-charge (SoC) of the battery expressed as a percentage.
--  Column `desired_SOC` indicates the requested state-of-charge (SoC) by the driver, expressed as a percentage.
-- Column `battery_capacity` gives the battery capacity in (kWh) which is the maximum energy that can be stored in the battery.
+-  Column `required_energy` displays the requested energy in kWh.
+
 
 ## Instances generation
 Electric vehicle arrivals are randomly occurring and independent events. Therefore, the arrival time is modeled using a non-homogeneous Poisson Process with an arrival rate that varies at each hour h={1,...,24}. 
@@ -32,7 +31,7 @@ Electric vehicle arrivals are randomly occurring and independent events. Therefo
 - The battery capacities are randomly chosen from the list of current real-world electric vehicle battery capacities 
  
 
-## Instanes with 10 vehicles
+## Instances with 10 vehicles
 `Instances_10_EVs ` folder contains 15 instances generated with a number of vehicles limited to 10.
 
 ## Instanes with more than 20 vehicles
